@@ -1,11 +1,9 @@
 name: Builder
-push: renovate bot 
-   
-   branches:
-      - main
-
-  pull_request:
-    types:
+run: 
+renovate bot 
+ : pull_request:
+     
+     types:
      open - opening - opened 
       - synchronize
   job:  reopen - await for builder to build the renovated work 
